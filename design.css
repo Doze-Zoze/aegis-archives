@@ -1,8 +1,43 @@
-/* CSS Document */
+/* Basic Styling */
+html, body{
+	height: 100%;
+}
 body{
+	display:flex;
+	flex-direction:column;
+	margin:0%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 }
+header{
+	margin: 0px;
+	color:#cf404d;
+	font-size: 40;
+	background-color: black;
+	padding:10px 1%;
+}
+footer{
+	padding:10px 1%;
+	background-color: grey;
+}
+section{
+	padding:1px 1%;
+}
+
+
+/* Flexible layout for navbar and footer*/
+.navbar{
+	flex-shrink: 0;
+}
+.content{
+	flex: 1 0 auto
+}
+.footer{
+	flex-shrink: 0;
+}
+
+/* Individual class/object styling*/
+
 .title{
 	color:#cf404d;
 	font-size: 40px;
@@ -11,4 +46,21 @@ body{
 .subtitle{
 	color:#cf404d;
 	font-size: 20px;
+}
+.button{
+	background-color:#cf404d;
+	border: 2px solid #cf404d;
+	border-radius: 8px;
+	padding: 15px 32px;
+	color: white;
+	text-decoration: none;
+}
+.button:hover {
+	background-color: #ffd6da;
+	color: #811b23;
+	transition-duration: 0.1s;
+}
+.buttontext{
+	color: inherit;
+	text-decoration: inherit;
 }
