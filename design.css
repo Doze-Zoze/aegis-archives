@@ -11,25 +11,31 @@ body{
 }
 header{
 	margin: 0px;
-	color:#cf404d;
+	color:#61cf40;
 	font-size: 40;
-	background-color: black;
-	padding:10px 1%;
+	background: rgb(61, 61, 61);	padding:10px 1%;
 }
 footer{
 	padding:10px 1%;
-	background-color: grey;
+	background-color: lightgrey;
 }
 section{
 	padding:1px 1%;
 }
-
+h1{
+	text-align: center;
+}
+h2{
+	text-align: left;
+}
 
 /* Flexible layout for navbar and footer*/
 .navbar{
 	flex-shrink: 0;
 }
 .content{
+	width: 100%;
+	margin: auto;
 	flex: 1 0 auto
 }
 .footer{
@@ -37,30 +43,92 @@ section{
 }
 
 /* Individual class/object styling*/
-
+.titlecard{
+	padding: 10%;
+	background: #d8f5cf;
+}
+.titlecard-small{
+	padding: 5%;
+	background: #d8f5cf;
+}
 .title{
-	color:#cf404d;
+	color:#1c490e;
 	font-size: 40px;
 }
 
 .subtitle{
-	color:#cf404d;
+	color:#1c490e;
 	font-size: 20px;
 }
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .button{
-	background-color:#cf404d;
-	border: 2px solid #cf404d;
+	background-color:#61cf40;
+	border: 2px solid #61cf40;
 	border-radius: 8px;
-	padding: 15px 32px;
-	color: white;
+	padding: 15px;
+	color: #1c490e;
 	text-decoration: none;
+	font-weight: bold;
+	margin: 10px;
+	width: 15%;
 }
 .button:hover {
+	background-color: #d8f5cf;
+	color: #1c490e;
+	transition-duration: 0.1s;
+}
+.widebutton{
+	background-color:#61cf40;
+	border: 2px solid #61cf40;
+	border-radius: 8px;
+	padding: 15px;
+	color: #1c490e;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 10px;
+	width: 15%;
+}
+.widebutton:hover {
+	background-color: #d8f5cf;
+	color: #1c490e;
+	transition-duration: 0.1s;
+}
+
+.pbutton{
+	background-color:#ff6f7b;
+	border: 2px solid #ff6f7b;
+	border-radius: 8px;
+	padding: 15px;
+	color: #4e0e13;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 10px;
+	width: 10%;
+}
+.pbutton:hover {
 	background-color: #ffd6da;
 	color: #811b23;
 	transition-duration: 0.1s;
 }
-.buttontext{
-	color: inherit;
-	text-decoration: inherit;
+
+.mbutton{
+	background-color: #d4b13b;
+	border: 2px solid #d4b13b;
+	border-radius: 8px;
+	padding: 15px;
+	color: #4b3c0c;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 10px;
+	width: 10%;
+}
+.mbutton:hover {
+	border: 2px solid #d4b13b;
+	background-color: #fff7db;
+	color: #4b3c0c;
+	transition-duration: 0.1s;
 }
