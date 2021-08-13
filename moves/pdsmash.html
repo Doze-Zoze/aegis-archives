@@ -7,12 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="../design.css">
 	</head>
 	<body>
-		<header class="navbar">
-			<h2>Aegis Archives</h2>
-			<a href= guides.html>Guides</a>
-			<a href="moveset.html">Moveset</a>
-			<a href="faq.html">FAQ</a>
-			<a href="index.html">Home</a>
+		<header id="navbar" class=navbar>
+			<script>
+				$(function(){
+				  $("#navbar").load("stickies/nav.html");
+				});
+			</script>
 		</header>
 		<div class="content">
 			<section class="titlecard-small">
@@ -20,11 +20,12 @@
 				<h1 class="subtitle">placeholder</h1>
 			</section>
 		</div>
-		<div id="footer-placeholder"></div>
-		<script>
-			$(function(){
-			  $("#footer-placeholder").load("stickies/footer.html");
-			});
-		</script>
+		<footer id=footer class="footer">
+			<script>
+				$(function(){
+				  $("#footer").load("stickies/footer.html");
+				});
+			</script>
+		</footer>
 	</body>
 </html>
