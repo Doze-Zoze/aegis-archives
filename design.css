@@ -34,7 +34,7 @@ h2{
 	padding: 5%;
 	background-color: blueviolet;
 }
-.nav-placeholder{
+.navbar{
 	flex-shrink: 0;
 }
 .navbar > a{
