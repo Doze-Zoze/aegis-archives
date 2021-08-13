@@ -30,13 +30,8 @@ h2{
 }
 
 /* Flexible layout for navbar and footer*/
-#nav-placeholder{
-	padding: auto;
-	background-color: blueviolet;
-	flex-shrink:0;
-}
 .navbar{
-	padding: 20px;
+	flex-shrink: 0;
 }
 .navbar > a{
 	margin: 5px 10px;
