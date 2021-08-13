@@ -7,9 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
 	<body>
-		<header class="navbar">
-			<h2>Aegis Archives</h2>
-		</header>
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function(){
+			  $("#nav-placeholder").load("stickies/nav.html");
+			});
+		</script>
 		<div class="content">
 			<section class="titlecard-small">
 				<h1 class="title">Moveset</h1>
@@ -81,8 +84,11 @@
 				</section>
 			</section><br>
 		</div>
-		<footer class="footer">
-			<p>Work in progress!</p>
-		</footer>
+		<div id="footer-placeholder"></div>
+		<script>
+			$(function(){
+			  $("#footer-placeholder").load("stickies/footer.html");
+			});
+		</script>
 	</body>
 </html>

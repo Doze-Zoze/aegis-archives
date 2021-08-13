@@ -33,6 +33,19 @@ h2{
 .navbar{
 	flex-shrink: 0;
 }
+.navbar > a{
+	margin: 5px 10px;
+	float:right;
+	color:#61cf40;
+	text-decoration: none;
+	font-size: 1em;
+}
+.navbar > h2:first-child{
+	margin: auto 10px;
+	float:left;
+	color:#61cf40;
+	font-size: 1.5em;
+}
 .content{
 	width: 100%;
 	margin: auto;
@@ -131,4 +144,8 @@ h2{
 	background-color: #fff7db;
 	color: #4b3c0c;
 	transition-duration: 0.1s;
+}
+
+.selected{
+	font-weight: bold;
 }
