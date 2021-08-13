@@ -31,7 +31,7 @@ h2{
 
 /* Flexible layout for navbar and footer*/
 #nav-placeholder{
-	flex-shrink: 0;
+	padding: 1%;
 }
 .nav-placeholder{
 	flex-shrink: 0;
