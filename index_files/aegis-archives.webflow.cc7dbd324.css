@@ -90,7 +90,7 @@ p {
   margin-left: 10px;
   padding: 12px 30px;
   border-radius: 4px;
-  background-color: #69b9ff;
+  background-color: #C12872;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   color: #fff;
@@ -150,7 +150,7 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: 'Open Sans', sans-serif;
-  color: #69b9ff;
+  color: #C12872;
   font-size: 25px;
   line-height: 25px;
   font-weight: 300;
@@ -195,7 +195,7 @@ p {
 .hero-section.centered {
   padding-top: 195px;
   padding-bottom: 195px;
-  border-bottom: 4px solid #69b9ff;
+  border-bottom: 4px solid #C12872;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 157, 255, 0.5)), to(rgba(46, 157, 255, 0.22)));
   background-image: linear-gradient(180deg, rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22));
   background-position: 0px 0px;
@@ -321,7 +321,7 @@ p {
   padding: 20px;
   border: 10px solid #fff;
   border-radius: 50%;
-  background-color: #69b9ff;
+  background-color: #C12872;
   box-shadow: 0 0 0 1px #2e9dff;
 }
 
