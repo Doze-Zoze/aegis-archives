@@ -64,15 +64,6 @@ h2{
 	padding: 5%;
 	background: #D0F4DC;
 }
-.title{
-	color:#0E4722;
-	font-size: 40px;
-}
-
-.subtitle{
-	color:#0E4722;
-	font-size: 20px;
-}
 .center{
 	display: flex;
 	justify-content: center;
@@ -146,6 +137,26 @@ h2{
 	transition-duration: 0.1s;
 }
 
-.selected{
-	font-weight: bold;
+/*Text Formatting*/
+.title{
+	color:#0E4722;
+	font-size: 40px;
+}
+
+.subtitle{
+	color:#0E4722;
+	font-size: 22px;
+	font-style: italic;
+	font-weight: normal;
+}
+.heading{
+	font-weight: normal;
+	color:#0E4722;
+	font-size:30px;
+}
+.subheading{
+	font-weight: lighter;
+	color:#0E4722;
+	font-size:18px;
+	font-style: italic;
 }
