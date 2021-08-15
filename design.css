@@ -1,17 +1,40 @@
 /* Basic Styling */
+:root{
+	font-size:16px ;
+	--green-text:#0E4722;
+	--green-primary:#40CE74;
+	--green-light: #D0F4DC;
+	--red-text:#4e0e13;
+	--red-primary:#ff6f7b;
+	--red-light: #ffd6da;
+	--yellow-text:#4b3c0c;
+	--yellow-primary:#fcd34e;
+	--yellow-light: #fff7db;
+	--background: rgb(61, 61, 61);
+}
 html, body{
 	height: 100%;
 }
 body{
 	display:flex;
 	flex-direction:column;
-	margin:0%;
+	margin: 0;
+	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+}
+body::-webkit-scrollbar {
+	width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+	background: var(--background);
+}
+body::-webkit-scrollbar-thumb{
+	background: var(--green-primary);
+	border-radius: 0.5rem
 }
 header{
 	margin: 0px;
-	color:#40CE74;
+	color:var(--green-primary);
 	font-size: 40;
 	background: rgb(61, 61, 61);	padding:10px 1%;
 }
@@ -33,21 +56,36 @@ h2{
 .navbar{
 	flex-shrink: 0;
 }
+.navbar-nav{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	float:left;
+}
+.nav-logo{
+	width: 5rem;
+	margin-bottom: 4rem;
+}
+.nav-item{
+	font-size: 0.5rem;
+	font-weight: bold;
+}
 .navbar > a{
 	margin: 5px 10px;
 	float:right;
-	color:#40CE74;
+	color:var(--green-primary);
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.25rem;
 }
 .navbar > h2:first-child{
 	margin: auto 10px;
 	float:left;
-	color:#40CE74;
-	font-size: 1.5em;
+	color:var(--green-primary);
+	font-size: 2.5rem;
 }
 .content{
-	width: 100%;
 	margin: 5 auto;
 	flex: 1 0 auto
 }
@@ -58,11 +96,11 @@ h2{
 /* Individual class/object styling*/
 .titlecard{
 	padding: 10%;
-	background: #D0F4DC;
+	background: var(--green-light);
 }
 .titlecard-small{
 	padding: 5%;
-	background: #D0F4DC;
+	background: var(--green-light);
 }
 .center{
 	display: flex;
@@ -70,93 +108,93 @@ h2{
 	align-items: center;
 }
 .button{
-	background-color:#40CE74;
-	border: 2px solid #40CE74;
+	background-color:var(--green-primary);
+	border: 2px solid var(--green-primary);
 	border-radius: 8px;
 	padding: 15px;
-	color: #0E4722;
+	color: var(--green-text);
 	text-decoration: none;
 	font-weight: bold;
 	margin: 10px;
-	width: 15%;
+	width: 11rem;
 }
 .button:hover {
-	background-color: #D0F4DC;
-	color: #0E4722;
+	background-color: var(--green-light);
+	color: var(--green-text);
 	transition-duration: 0.1s;
 }
 .widebutton{
-	background-color:#40CE74;
-	border: 2px solid #40CE74;
+	background-color:var(--green-primary);
+	border: 2px solid var(--green-primary);
 	border-radius: 8px;
 	padding: 15px;
-	color: #0E4722;
+	color: var(--green-text);
 	text-decoration: none;
 	font-weight: bold;
 	margin: 10px;
-	width: 15%;
+	width: 16.5rem;
 }
 .widebutton:hover {
-	background-color: #D0F4DC;
-	color: #0E4722;
+	background-color: var(--green-light);
+	color: var(--green-text);
 	transition-duration: 0.1s;
 }
 
 .pbutton{
-	background-color:#ff6f7b;
-	border: 2px solid #ff6f7b;
+	background-color:var(--red-primary);
+	border: 2px solid var(--red-primary);
 	border-radius: 8px;
 	padding: 15px;
-	color: #4e0e13;
+	color: var(--red-text);
 	text-decoration: none;
 	font-weight: bold;
 	margin: 10px;
-	width: 10%;
+	width: 11rem;
 }
 .pbutton:hover {
-	background-color: #ffd6da;
-	color: #811b23;
+	background-color: var(--red-light);
+	color: var(--red-text);
 	transition-duration: 0.1s;
 }
 
 .mbutton{
-	background-color: #fcd34e;
-	border: 2px solid #fcd34e;
+	background-color: var(--yellow-primary);
+	border: 2px solid var(--yellow-primary);
 	border-radius: 8px;
 	padding: 15px;
-	color: #4b3c0c;
+	color: var(--yellow-text);
 	text-decoration: none;
 	font-weight: bold;
 	margin: 10px;
-	width: 10%;
+	width: 11rem;
 }
 .mbutton:hover {
-	border: 2px solid #fcd34e;
-	background-color: #fff7db;
-	color: #4b3c0c;
+	border: 2px solid var(--yellow-primary);
+	background-color: var(--yellow-light);
+	color: var(--yellow-text);
 	transition-duration: 0.1s;
 }
 
 /*Text Formatting*/
 .title{
-	color:#0E4722;
+	color:var(--green-text);
 	font-size: 40px;
 }
 
 .subtitle{
-	color:#0E4722;
+	color:var(--green-text);
 	font-size: 22px;
 	font-style: italic;
 	font-weight: normal;
 }
 .heading{
 	font-weight: normal;
-	color:#0E4722;
+	color:var(--green-text);
 	font-size:30px;
 }
 .subheading{
 	font-weight: lighter;
-	color:#0E4722;
+	color:var(--green-text);
 	font-size:18px;
 	font-style: italic;
 }
