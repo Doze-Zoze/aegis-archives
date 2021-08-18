@@ -1,4 +1,7 @@
 /* Basic Styling */
+html{
+	scroll-behavior: smooth;
+}
 :root{
 	font-size:16px ;
 	--green-text:#0E4722;
@@ -11,6 +14,8 @@
 	--yellow-primary:#fcd34e;
 	--yellow-light: #fff7db;
 	--background: rgb(61, 61, 61);
+	scrollbar-width: thin;
+	scrollbar-color:  var(--green-primary) var(--background);
 }
 html, body{
 	height: 100%;
@@ -166,6 +171,11 @@ h2{
 	color: var(--yellow-text);
 	transition-duration: 0.1s;
 }
+.bodycontent{
+	margin: auto;
+	width: 90vw;
+	line-height: 150%;
+}
 
 /*Text Formatting*/
 .title{
@@ -193,3 +203,25 @@ h2{
 .logo{
 	height: 2rem;
 }
+b {
+	text-decoration: underline;
+}
+.yt{
+	position: relative;
+	height: 0;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+  }
+
+  .yt iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+  .yt2{
+	max-width:560px;
+	margin: 10px auto;
+  }
