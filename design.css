@@ -142,35 +142,25 @@ h2{
 	transition-duration: 0.1s;
 }
 
-.pbutton{
+.pyra{
 	background-color:var(--red-primary);
 	border: 2px solid var(--red-primary);
-	border-radius: 8px;
-	padding: 1rem;
 	color: var(--red-text);
-	text-decoration: none;
-	font-weight: bold;
-	margin: 10px;
-	width: 11rem;
+
 }
-.pbutton:hover {
+
+.pyra:hover {
 	background-color: var(--red-light);
 	color: var(--red-text);
 	transition-duration: 0.1s;
 }
 
-.mbutton{
+.mythra{
 	background-color: var(--yellow-primary);
 	border: 2px solid var(--yellow-primary);
-	border-radius: 8px;
-	padding: 1rem;
 	color: var(--yellow-text);
-	text-decoration: none;
-	font-weight: bold;
-	margin: 10px;
-	width: 11rem;
 }
-.mbutton:hover {
+.mythra:hover {
 	border: 2px solid var(--yellow-primary);
 	background-color: var(--yellow-light);
 	color: var(--yellow-text);
