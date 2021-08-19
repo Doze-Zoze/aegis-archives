@@ -79,11 +79,17 @@ h2{
 	font-weight: bold;
 }
 .navbar > a{
-	margin: 5px 10px;
+	display: block;
+	margin: 0px;
+	padding: 5px 10px;
 	float:right;
 	color:var(--green-primary);
 	text-decoration: none;
 	font-size: 1.25rem;
+}
+.navbar > a:hover{
+	color:var(--red-primary);
+	transition-duration: 0.1s;
 }
 .navbar > h2:first-child{
 	margin: auto 10px;
@@ -206,22 +212,27 @@ h2{
 b {
 	text-decoration: underline;
 }
-.yt{
+.yt1{
 	position: relative;
 	height: 0;
 	width: 100%;
 	padding-bottom: 56.25%; /* 16:9 */
-  }
+}
 
-  .yt iframe {
+.yt1 iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-  }
+}
 
-  .yt2{
-	max-width:560px;
-	margin: 10px auto;
-  }
+.yt2{
+	margin: 0px;
+}
+  
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+}
